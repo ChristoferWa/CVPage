@@ -5,60 +5,69 @@ import {BsPatchCheckFill} from 'react-icons/bs'
 const Experience = () => {
   return (
     <section id='experience'>
-      <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+      <h2>Domare</h2>
 
       <div className="container experience__container">
         <div className="experience__frontend">
-          <h3>Frontend Development</h3>
+          <h3>Dömer följande raser</h3>
           <div className="experience__content">
             <article className='experience__details'>
-            <BsPatchCheckFill className='experience__details-icons' />
-            <div>
-              <h4>HTML</h4>
-              <small className='text-light'>Experienced</small>
-            </div>
+            <BsPatchCheckFill className='experience__details-icons'/>
+            <div><h4>BORDER TERRIER</h4><small className='text-light'></small></div>
             </article>
             <article className='experience__details'>
             <BsPatchCheckFill className='experience__details-icons'/>
-            <div>
-              <h4>CSS</h4>
-              <small className='text-light'>Intermediate</small>
-              </div>
+            <div><h4>CAIRN TERRIER</h4><small className='text-light'></small></div>
             </article>
             <article className='experience__details'>
             <BsPatchCheckFill className='experience__details-icons'/>
-            <div><h4>JavaScript</h4><small className='text-light'>Experienced</small></div>
+            <div><h4>FOX TERRIER</h4><small className='text-light'></small></div>
             </article>
             <article className='experience__details'>
             <BsPatchCheckFill className='experience__details-icons'/>
-            <div><h4>Bootstrap</h4><small className='text-light'>Experienced</small></div>
+            <div><h4>GERMAN HUNTING TERRIER</h4><small className='text-light'></small></div>
             </article>
             <article className='experience__details'>
             <BsPatchCheckFill className='experience__details-icons'/>
-            <div><h4>AngularJS</h4><small className='text-light'>Basic</small></div>
+            <div><h4>JACK RUSSELL TERRIER</h4><small className='text-light'></small></div>
             </article>
             <article className='experience__details'>
             <BsPatchCheckFill className='experience__details-icons'/>
-            <div><h4>React</h4><small className='text-light'>Basic</small></div>
+            <div><h4>NORFOLK TERRIER</h4><small className='text-light'></small></div>
+            </article>
+            <article className='experience__details'>
+            <BsPatchCheckFill className='experience__details-icons'/>
+            <div><h4>NORWICH TERRIER</h4><small className='text-light'></small></div>
+            </article>
+            <article className='experience__details'>
+            <BsPatchCheckFill className='experience__details-icons'/>
+            <div><h4>PARSON RUSSELL TERRIER</h4><small className='text-light'></small></div>
+            </article>
+            <article className='experience__details'>
+            <BsPatchCheckFill className='experience__details-icons'/>
+            <div><h4>WELSH TERRIER</h4><small className='text-light'></small></div>
             </article>
           </div>
         </div>
         {/* END OF FRONTEND */}
         <div className="experience__backend">
-        <h3>Backend Development</h3>
+        <h3>Har dömt i följande länder</h3>
           <div className="experience__content">
             <article className='experience__details'>
             <BsPatchCheckFill className='experience__details-icons'/>
-            <div><h4>MVC</h4><small className='text-light'>Experienced</small></div>
+            <div><h4>Sverige</h4><small className='text-light'></small></div>
             </article>
             <article className='experience__details'>
             <BsPatchCheckFill className='experience__details-icons'/>
-            <div><h4>MSSQL</h4><small className='text-light'>Intermediate</small></div>
+            <div><h4>Norge</h4><small className='text-light'></small></div>
             </article>
             <article className='experience__details'>
             <BsPatchCheckFill className='experience__details-icons'/>
-            <div><h4>SharePoint</h4><small className='text-light'>Experienced</small></div>
+            <div><h4>Finland</h4><small className='text-light'></small></div>
+            </article>
+            <article className='experience__details'>
+            <BsPatchCheckFill className='experience__details-icons'/>
+            <div><h4>Danmark</h4><small className='text-light'></small></div>
             </article>
           </div>
         </div>

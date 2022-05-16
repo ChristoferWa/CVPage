@@ -1,9 +1,9 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/port1.png'
-import IMG2 from '../../assets/port2.png'
-import IMG3 from '../../assets/port3.png'
-import IMG4 from '../../assets/port4.png'
+import IMG1 from '../../assets/Moses.png'
+import IMG2 from '../../assets/Snöa.png'
+import IMG3 from '../../assets/Valpen.png'
+import IMG4 from '../../assets/Mackenzie.png'
 import IMG5 from '../../assets/port5.png'
 import IMG6 from '../../assets/port6.png'
 
@@ -11,43 +11,33 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Crypto',
-    github: 'https://github.com',
+    title: 'Moses',
+    description: 'Titlar: SE UHC, HD/BB, ED/00, Öga/ua (2019), Genomfört BPH',
+    stamtavla: 'https://hundar.skk.se/hunddata/Hund_Stamtavla.aspx?hundid=3152891&fbclid=IwAR3_P_rMe3ijPd18YIu0WkxSHt83ib1YUr_hRWVhLgNho0kA-yTRYPH9Jtw',
     demo: 'https://dribbble.com/alien_pixels'
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Crypto',
-    github: 'https://github.com',
+    title: 'Snöa',
+    description: 'Testar lite text till Snöa',
+    stamtavla: 'https://hundar.skk.se/hunddata/Hund_Stamtavla.aspx?hundid=3532761&fbclid=IwAR362mjci1xd0qLqJDSO1rtobM5zZMZ5bDbIvuzdulYJaSYvyJV_RLANkZQ',
     demo: 'https://dribbble.com/alien_pixels'
   },
   {
     id: 3,
     image: IMG3,
-    title: 'Crypto',
-    github: 'https://github.com',
+    title: 'Valpen',
+    description: 'Titlar: NORD-JV 19, SE UCH, HeW-21, FI UHC, HD/AA, ED/00, Ögon/ua, Genomfört BPH',
+    stamtavla: 'https://github.com',
     demo: 'https://dribbble.com/alien_pixels'
   },
   {
     id: 4,
     image: IMG4,
-    title: 'Crypto',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/alien_pixels'
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: 'Crypto',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/alien_pixels'
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: 'Crypto',
-    github: 'https://github.com',
+    title: 'Mackenzie',
+    description: 'Här kommer lite text om Mackenzie',
+    stamtavla: 'https://hundar.skk.se/hunddata/Hund_Stamtavla.aspx?hundid=3235041&fbclid=IwAR1RHD3lBydNhAjE0__sNGgYf1bWm-0iXBtrNXQvSyX4eMysASn_YyhBzr8',
     demo: 'https://dribbble.com/alien_pixels'
   }
 ]
@@ -56,21 +46,20 @@ const data = [
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h2>Hundar</h2>
 
       <div className="container portfolio__container">
        {
-         data.map(({id, image, title, github, demo}) => {
+         data.map(({id, image, title, stamtavla, description}) => {
            return (
             <article key={id} className='portfolio__item'>
             <div className="portfolio__item-image">
-              <img src={image} alt={title}/>
+              <img src={image} alt={title} className='dog__picture'/>
             </div>
               <h3>{title}</h3>
+              <h5>{description}</h5>
               <div className="portfolio__item-cta">
-              <a href={github} className='btn' target='_blank'>GitHub</a>
-              <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+              <a href={stamtavla} className='btn btn-primary' target='_blank'>Stamtavla</a>
               </div>
           </article>
            )

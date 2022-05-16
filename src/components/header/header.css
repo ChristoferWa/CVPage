@@ -1,6 +1,6 @@
 header{
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 2rem;
     overflow: hidden;
 }
 
@@ -41,15 +41,15 @@ header{
 /* ====================ME=================*/
 
 .me {
-    background: linear-gradient(var(--color-primary), transparent) ;
-    width: 22rem;
-    height: 30rem;
+    background: linear-gradient(transparent);
+    width: 30rem;
+    height: 40rem;
     position: absolute;
-    left: calc(50% - 11rem);
+    left: calc(50% - 15rem);
     margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
+    border-radius: 15rem 15rem 0 0;
     overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    padding: 3rem 2rem 2rem 2rem;
 }
 
 /* ====================Scroll Down=================*/
@@ -68,16 +68,20 @@ header{
 @media screen and (max-width: 1024px){
     .container{
         width: var(--container-width-md);
+        padding-top: 5rem;
     }
     section {
-        margin-top: 6rem;
+        margin-top: 5rem;
     }
 }
 /* =====================MEDIA QUERIES(Small devices) ======================*/
 
 @media screen and (max-width: 600px){
+    .container {
+        padding-top: 0rem;
+    }
     header {
-        height: 68vh;
+        height: 75vh;
 
     }
     header {
