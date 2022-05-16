@@ -12,7 +12,7 @@
 }
 .service:hover {
     background: transparent;
-    border-color: var(--color-primary-variant);
+    border-color: var(--color-primary-geps);
     cursor: default;
 }
 .service__head {
