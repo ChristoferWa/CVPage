@@ -1,12 +1,15 @@
 import React from 'react'
-import './contact.css'
-import {MdOutlineEmail} from 'react-icons/md'
-import {RiMessengerLine} from 'react-icons/ri'
-import {BsWhatsapp} from 'react-icons/bs'
+import '../components/contact/contact.css';
+import {MdOutlineEmail} from 'react-icons/md';
+import {RiMessengerLine} from 'react-icons/ri';
+import {BsWhatsapp} from 'react-icons/bs';
+import Nav from '../components/nav/Nav';
+import Footer from '../components/footer/Footer';
 
 const Contact = () => {
   return (
     <section id='contact'>
+       <Nav />
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
       <div className="container contact__container">
@@ -38,6 +41,7 @@ const Contact = () => {
           <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>
       </div>
+      <Footer />
     </section>
   )
 }
